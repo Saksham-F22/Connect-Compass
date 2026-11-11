@@ -1,4 +1,3 @@
-# Connect-Compass
 # Concept Compass v1.3.2 — Clear learning workspace
 
 Concept Compass is a browser-local adaptive learning prototype. QuestShift generates diagnostic and focused-practice question sets; the app remembers missed concepts, schedules revisions and keeps a personal mistake notebook.

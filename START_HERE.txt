@@ -1,0 +1,41 @@
+CONCEPT COMPASS v1.3.2 — CLEAR WORKSPACE + ACCESSIBILITY REWORK
+
+1) Extract this ZIP to C:\CC132. Confirm package.json is directly inside C:\CC132.
+2) Use Node.js 20.19+ or 22.12+.
+3) Copy your existing worker\.dev.vars into C:\CC132\worker\.dev.vars. Keep your Gemini key private.
+4) Double-click START_CONCEPT_COMPASS.cmd. The launcher builds dist before Wrangler starts.
+5) Open http://127.0.0.1:5199/ and confirm the footer says BUILD 1.3.2. Keep both terminal windows open.
+
+MAIN NAVIGATION
+- Overview: start a question set and see your next learning step.
+- My Progress: view performance trends and saved test history.
+- Smart Revision: separate page for due and upcoming concept reviews.
+- Mistake Notebook: separate page for open and reviewed incorrect answers.
+- Accessibility: separate settings page; text scaling no longer uses browser zoom.
+
+ACCESSIBILITY SETTINGS
+- Text size: Standard, Large or Largest.
+- High contrast: stronger text, borders and button contrast.
+- Reduce motion: disables animation and transition effects.
+- Clearer font: uses a system sans-serif font.
+- Preferences are saved in this browser. Use Reset accessibility settings to restore defaults.
+
+DATA
+Learning memory and display preferences are kept in this browser only. There is no account or cross-device sync. Clearing browser data can delete these records.
+
+TESTS (PowerShell in C:\CC132)
+node scripts\test-accessibility-revision.mjs
+node scripts\test-workspace-sections.mjs
+node scripts\test-ui-navigation.mjs
+node scripts\test-learning-memory.mjs
+node scripts\test-learning-memory-integration.mjs
+node scripts\test-concept-matching.mjs
+node scripts\smoke-test.mjs
+node scripts\test-concept-videos.mjs
+node scripts\test-youtube-search.mjs
+node scripts\test-launcher-assets.mjs
+
+NOTES
+- Revision schedule is a heuristic; students can practise earlier at any time.
+- Learning data remains local to this browser.
+- AI question quality and live external-service connectivity must be checked in the actual running environment.
